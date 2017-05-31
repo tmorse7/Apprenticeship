@@ -5,7 +5,8 @@ Questions:
      by a message stating what changes were made.
 2. What is Github? Do you need it to use git? Why or why not?
   A) Github is a website used to remotely work on repositories and files. This lets the user work collaboratively over
-     the internet on such repositories. You do not, however, need github to be able to use git. Git is its own software      that can actually work with other online repository editing sites such as bitbucket. You are able to change your
+     the internet on such repositories. You do not, however, need github to be able to use git. Git is its own software      
+     that can actually work with other online repository editing sites such as bitbucket. You are able to change your
      'remote' at any time, letting you push to other sites that let you host and edit repositories online.
 3. Why do you think we are using something like git rather than just having a 'save' command for all the files in a
    project?
