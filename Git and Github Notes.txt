@@ -69,3 +69,5 @@ Process:
 * Check 'git status' if need be to see if stage is correct
 * Commit file with 'git commit (-a is optional) -m "comment"'
 * Push file out with 'git push -u origin <branch>'
+
+In order to access shared folder, you need to go to root and then access vagrant folder
