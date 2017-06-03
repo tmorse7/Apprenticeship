@@ -158,4 +158,4 @@ Learning Ruby Notes
 	
 General Notes
 -------------
-	* -r recurssively edits directories, manipulating all internal files
+	* -r recurssively edits directories, manipulating all internal files within

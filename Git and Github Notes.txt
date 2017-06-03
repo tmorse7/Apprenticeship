@@ -70,4 +70,4 @@ Process:
 * Commit file with 'git commit (-a is optional) -m "comment"'
 * Push file out with 'git push -u origin <branch>'
 
-In order to access shared folder, you need to go to root and then access vagrant folder
+In order to access shared folder, you need to go to root and then access vagrant folder.
