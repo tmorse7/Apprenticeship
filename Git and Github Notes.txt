@@ -47,7 +47,7 @@ Git and Github Notes
 * If you start repository locally, get remote from github
 * If you need to log back in, use these:
 	- git config --global user.name "Your name"
-	- git config --global user.email you@example.com 
+	- git config --global user.email you@example.com
 *Github Pages
 	- make a new branch called "gh-pages"
 	- Change default repository in settings under branches
@@ -58,7 +58,9 @@ Git and Github Notes
 	- Exact changelog
 * git checkout "blah"
 	- Switches branches
-	
+* git checkout -v
+	- Lists all branches
+
 Process:
 --------
 * 'git init' to initialize folder or 'git pull <link> <branch>'
