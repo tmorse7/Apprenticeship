@@ -14,13 +14,13 @@ Atom Notes
 		- End 			- Move to the end of the line
 		- Ctrl+Home 	- Move to the top of the file
 		- Ctrl+End 		- Move to the bottom of the file
-		- Ctrl+G 		- Move to specific line (row:column)
-		- Ctrl+R		- Jump to a symbol
-		- Ctrl+T		- Does same thing as preview command but needs a tags file (Don't know if fully neccessary)
+		- Ctrl+G 			- Move to specific line (row:column)
+		- Ctrl+R			- Jump to a symbol
+		- Ctrl+T			- Does same thing as preview command but needs a tags file (Don't know if fully neccessary)
 		- Alt+Ctrl+F2	- Toggle bookmark on current line
-		- F2			- Jump to next bookmark
+		- F2					- Jump to next bookmark
 		- Shift+F2		- Cycle backwards through them
-		- Ctrl+F2		- List of bookmarks
+		- Ctrl+F2			- List of bookmarks
 	* Atom Selections
 		- Shift+Up 			- Select up
 		- Shift+Down 		- Select down
@@ -55,13 +55,42 @@ Atom Notes
 		- Whitespace
 			~ atom/whitespace
 		- Brackets
-			~ Ctrl+M 		- Jump to the bracket matching the one adjacent to the cursor. It jumps to the nearest enclosing bracket when there's no adjacent bracket.
+			~ Ctrl+M 			- Jump to the bracket matching the one adjacent to the cursor. It jumps to the nearest enclosing bracket when there's no adjacent bracket.
 			~ Alt+Ctrl+M 	- Select all the text inside the current brackets
 			~ Alt+Ctrl+. 	- Close the current XML/HTML tag
 		- Encoding
 			~ Ctrl+Shift+U 		- Toggle menu to change file encoding
 	* Find and Replace
-		- Ctrl+F 			- Search within a buffer
+		- Ctrl+F 					- Search within a buffer
 		- Ctrl+Shift+F 		- Search the entire project (and replace)
 	* Snippets
-		
+		- Tab			- Expand code snippets
+	* Folding
+		- Alt+Ctrl+[/]						- Fold and unfold blocks of code
+			~ Add shift to fold/unfold everything
+		- Ctrl+K and Ctrl+0-9			- Folds at specific indention level
+		-Alt+Ctrl+F								- Fold arbitrary sections of your code with selection
+	* Panes
+		- Ctrl+K with up/down/left/right		- Split pane
+			~ Add Ctrl with directional buttons to navigate between panes
+		- Ctrl+W		- Close pane
+	* Grammar
+		- Ctrl+Shift+L		- Language selector
+	* Version Control
+		- Checkout HEAD revision
+			~ Alt+Ctrl+Z		- Discards staged and saved changes that aren't from latest commit
+		- Git Status List
+			~ Ctrl+T					- Open files in a project
+			~ Ctrl+B					- Jump to any open editor
+			~ Ctrl+Shift+B		- Shows untracked and modified files
+		- Open on GitHub
+			~ Alt+G O 	- Open file on GitHub
+			~ Alt+G B 	- Open Blame view of file on GitHub
+			~ Alt+G H 	- Open History view of file on GitHub
+			~ Alt+G C 	- Copy the URL of the current file on GitHub to the clipboard
+			~ Alt+G R 	- Branch compare on GitHub
+	* Writing in Atom
+		- Spell Checking
+			~ Ctrl+Shift+;		- Possible corrections list
+		- MarkDown Preview
+			~ Ctrl+Shift+M
