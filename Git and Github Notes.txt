@@ -58,7 +58,7 @@ Git and Github Notes
 	- Exact changelog
 * git checkout "blah"
 	- Switches branches
-* git checkout -v
+* git branch -v
 	- List all branches
 
 Process:
