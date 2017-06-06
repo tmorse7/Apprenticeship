@@ -59,7 +59,7 @@ Git and Github Notes
 * git checkout "blah"
 	- Switches branches
 * git branch -v
-	- List all branches
+	- Lists all branches
 
 Process:
 --------
