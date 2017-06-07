@@ -1,5 +1,5 @@
-Bitbucket vs. Github Interface Thoughts
----------------------------------------
+# Bitbucket vs. Github Interface Thoughts
+
 Compared to Github, Bitbucket seems to be more bare bones with its features. I
 feel like with Bitbucket, everything is slimmed down to where most of what you
 need is able to be accessed on the side. Github on the other hand seems to have
