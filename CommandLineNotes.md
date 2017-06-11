@@ -12,49 +12,49 @@
 1. Exercise 1: The Setup
  * Linux/OSX Commands
   - pwd
-			~ print working directory
+	~ print working directory
   * hostname
-			~ my computer's network name
+	~ my computer's network name
   * mkdir
-			~ make directory
+	~ make directory
   * cd
-			~ change directory
+	~ change directory
   * ls
-			~ list directory
+	~ list directory
   * rmdir
-			~ remove directory
+	~ remove directory
   * pushd
-			~ push directory
+	~ push directory
   * popd
-			~ pop directory
+	~ pop directory
   * cp
-			~ copy a file or directory
+	~ copy a file or directory
   * mv
-			~ move a file or directory
+	~ move a file or directory
   * less
-			~ page through a file
+	~ page through a file
   * cat
-			~ print the whole file
+	~ print the whole file
   * xargs
-			~ execute arguments
+	~ execute arguments
   * find
-			~ find files
+	~ find files
   * grep
-			~ find things inside files
+	~ find things inside files
   * man
-			~ read a manual page
+	~ read a manual page
   * apropos
-			~ find what man page is appropriate
+	~ find what man page is appropriate
   * env
-			~ look at your environment
+	~ look at your environment
   * echo
-			~ print some arguments
+	~ print some arguments
   * export
-			~ export/set a new environment variable
+	~ export/set a new environment variable
   * exit
-			~ exit the shell
+	~ exit the shell
   * sudo
-			~ DANGER! become super user root DANGER!
+	~ DANGER! become super user root DANGER!
  * Windows Console
 	- Powershell
  * Commands (Windows)
