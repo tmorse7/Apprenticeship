@@ -57,35 +57,35 @@
 			~ DANGER! become super user root DANGER!
 
 2. Exercise 2: Paths, Folders, Directories (pwd)
- * The ">" symbol is used to prompt the user ($ for Unix)
- * pwd stands for "print working directory"
+  * The ">" symbol is used to prompt the user ($ for Unix)
+  * pwd stands for "print working directory"
 
 3. Exercise 3: If You Get Lost
- * To go to default path, type 'cd ~'
- * Print pwd and then cd ~
+  * To go to default path, type 'cd ~'
+  * Print pwd and then cd ~
 
 4. Exercise 4: Make A Directory
- * Make new Directory by using 'mkdir' and 'mkdir -p' for bigger directories for Linux/OSX
- * Directories are the same as folders
- * / can be used, but \ is the usual one to use
+  * Make new Directory by using 'mkdir' and 'mkdir -p' for bigger directories for Linux/OSX
+  * Directories are the same as folders
+  * / can be used, but \ is the usual one to use
 
 5. Exercise 5: Change Directory (cd)
- * Use '..' to navigate up the tree/path
+  * Use '..' to navigate up the tree/path
 
 6. Exercise 6: List Directory (ls)
- * dir -r and ls -lr print absolutely everytning
+  * dir -r and ls -lr print absolutely everytning
 
 7. Exercise 7: Remove directory (rmdir)
- * rmdir (dir) to remove
+  * rmdir (dir) to remove
 
 8. Exercise 8: Moving Around (pushd, popd)
- * 'pushd' takes current directory and pushes into a list for later, changes it to another directory
+  * 'pushd' takes current directory and pushes into a list for later, changes it to another directory
 		- 'save where I am, then go here'
- * 'popd' takes last directory you pushed and 'pops' it off, taking you back there
- * Doesn't work in powershell
+  * 'popd' takes last directory you pushed and 'pops' it off, taking you back there
+  * Doesn't work in powershell
 
 9. Exercise 9: Making Empty Files (Touch, New-Item (windows))
- * Example on Windows
+  * Example on Windows
   - New-Item example.txt -type file
 
 10. Exercise 10: Copy a File (cp)
