@@ -1,4 +1,4 @@
-# Learning Ruby Notes
+# Learning Ruby Notes  
 
 
 0. Introduction
