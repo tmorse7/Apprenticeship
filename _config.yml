@@ -1,1 +1,10 @@
-theme: jekyll-theme-time-machine
+name: "Tristan's Code Blog"
+description: "Coding notes dumping ground"
+
+url: "http://localhost:4000"
+
+gems: [jekyll-paginate]
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
