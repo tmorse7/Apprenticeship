@@ -10,7 +10,7 @@
 		- Notecards are suggested
 
 1. Exercise 1: The Setup
-  * Linux/OSX Commands
+  * Linux/OSX Commands  
 		* pwd
 			~ print working directory
 		* hostname
