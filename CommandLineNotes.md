@@ -11,7 +11,7 @@
 
 1. Exercise 1: The Setup
  * Linux/OSX Commands
-  * pwd
+  - pwd
 			~ print working directory
   * hostname
 			~ my computer's network name
