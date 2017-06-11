@@ -1,7 +1,7 @@
 name: "Tristan's Code Blog"
 description: "Coding notes dumping ground"
 
-url: "https://tristanscode.com"
+url: "https://tmorse7.github.io/Apprenticeship/"
 
 gems: [jekyll-paginate]
 paginate: 10
