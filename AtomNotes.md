@@ -1,9 +1,9 @@
-Atom Notes
-----------
+# Atom Notes
+
 1. Getting Started
 	* Atom Basics
-		Search for command
-			- Ctrl+Shift+P
+	 * Search for command
+		- Ctrl+Shift+P
 2. Using Atom
 	* Atom Packages
 		- Search for them in the install tab in settings
@@ -36,30 +36,30 @@ Atom Notes
 		- Ctrl+L 			- Select the entire line
 	* Editing and Deleting Text
 		- Basic Manipulation
-			~ Ctrl+J 			- Join the next line to the end of the current line
-			~ Ctrl+Up/Down 		- Move the current line up or down
-			~ Ctrl+Shift+D 		- Duplicate the current line
-			~ Ctrl+K Ctrl+U 	- Upper case the current word
-			~ Ctrl+K Ctrl+L 	- Lower case the current word
-			~ Alt+Ctrl+Q		- Current selection has no longer than 80 characters
+			- Ctrl+J 			- Join the next line to the end of the current line
+			-Ctrl+Up/Down 		- Move the current line up or down
+			- Ctrl+Shift+D 		- Duplicate the current line
+			- Ctrl+K Ctrl+U 	- Upper case the current word
+			- Ctrl+K Ctrl+L 	- Lower case the current word
+			- Alt+Ctrl+Q		- Current selection has no longer than 80 characters
 		- Deleting and Cutting
-			~ Ctrl+Shift+K 		- Delete current line
-			~ Ctrl+Backspace 	- Delete to beginning of word
-			~ Ctrl+Delete 		- Delete to end of word
+			- Ctrl+Shift+K 		- Delete current line
+			- Ctrl+Backspace 	- Delete to beginning of word
+			- Ctrl+Delete 		- Delete to end of word
 		- Multiple Cursors and Selections
-			~ Ctrl+Click 			- Add a new cursor at the clicked location
-			~ Alt+Ctrl+Up/Down 		- Add another cursor above/below the current cursor
-			~ Ctrl+D 				- Select the next word in the document that is the same as the currently selected word
-			~ Alt+F3 				- Select all words in the document that are the same as the currently selected word
-			~ Ctrl+Mouse			- Select multiple regions simultaneously
+			- Ctrl+Click 			- Add a new cursor at the clicked location
+			- Alt+Ctrl+Up/Down 		- Add another cursor above/below the current cursor
+			- Ctrl+D 				- Select the next word in the document that is the same as the currently selected word
+			- Alt+F3 				- Select all words in the document that are the same as the currently selected word
+			- Ctrl+Mouse			- Select multiple regions simultaneously
 		- Whitespace
-			~ atom/whitespace
+			- atom/whitespace
 		- Brackets
-			~ Ctrl+M 			- Jump to the bracket matching the one adjacent to the cursor. It jumps to the nearest enclosing bracket when there's no adjacent bracket.
-			~ Alt+Ctrl+M 	- Select all the text inside the current brackets
-			~ Alt+Ctrl+. 	- Close the current XML/HTML tag
+			- Ctrl+M 			- Jump to the bracket matching the one adjacent to the cursor. It jumps to the nearest enclosing bracket when there's no adjacent bracket.
+			- Alt+Ctrl+M 	- Select all the text inside the current brackets
+			- Alt+Ctrl+. 	- Close the current XML/HTML tag
 		- Encoding
-			~ Ctrl+Shift+U 		- Toggle menu to change file encoding
+			- Ctrl+Shift+U 		- Toggle menu to change file encoding
 	* Find and Replace
 		- Ctrl+F 					- Search within a buffer
 		- Ctrl+Shift+F 		- Search the entire project (and replace)
@@ -78,19 +78,19 @@ Atom Notes
 		- Ctrl+Shift+L		- Language selector
 	* Version Control
 		- Checkout HEAD revision
-			~ Alt+Ctrl+Z		- Discards staged and saved changes that aren't from latest commit
+			- Alt+Ctrl+Z		- Discards staged and saved changes that aren't from latest commit
 		- Git Status List
-			~ Ctrl+T					- Open files in a project
-			~ Ctrl+B					- Jump to any open editor
-			~ Ctrl+Shift+B		- Shows untracked and modified files
+			- Ctrl+T					- Open files in a project
+			- Ctrl+B					- Jump to any open editor
+			- Ctrl+Shift+B		- Shows untracked and modified files
 		- Open on GitHub
-			~ Alt+G O 	- Open file on GitHub
-			~ Alt+G B 	- Open Blame view of file on GitHub
-			~ Alt+G H 	- Open History view of file on GitHub
-			~ Alt+G C 	- Copy the URL of the current file on GitHub to the clipboard
-			~ Alt+G R 	- Branch compare on GitHub
+			- Alt+G O 	- Open file on GitHub
+			- Alt+G B 	- Open Blame view of file on GitHub
+			- Alt+G H 	- Open History view of file on GitHub
+			- Alt+G C 	- Copy the URL of the current file on GitHub to the clipboard
+			- Alt+G R 	- Branch compare on GitHub
 	* Writing in Atom
 		- Spell Checking
-			~ Ctrl+Shift+;		- Possible corrections list
+		 - Ctrl+Shift+;		- Possible corrections list
 		- MarkDown Preview
-			~ Ctrl+Shift+M
+			- Ctrl+Shift+M

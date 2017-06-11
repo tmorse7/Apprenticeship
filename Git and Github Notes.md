@@ -1,5 +1,5 @@
-Git and Github Notes
---------------------
+# Git and Github Notes
+
 * Repository
 	- Place to store files
 * Commit (command)
@@ -48,7 +48,7 @@ Git and Github Notes
 * If you need to log back in, use these:
 	- git config --global user.name "Your name"
 	- git config --global user.email you@example.com
-*Github Pages
+* Github Pages
 	- make a new branch called "gh-pages"
 	- Change default repository in settings under branches
 	- Delete master branch
@@ -61,8 +61,8 @@ Git and Github Notes
 * git branch -v
 	- Lists all branches
 
-Process:
---------
+# Process:
+
 * 'git init' to initialize folder or 'git pull <link> <branch>'
 * Make a branch if need be with 'git checkout -b "branch"'
 * Set remote properly with 'git remote' and if you don't have it, use 'git remote add origin <link>'

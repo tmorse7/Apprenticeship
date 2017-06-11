@@ -1,0 +1,8 @@
+# Thoughts on Atom
+1. What do you think of atom vs vi? Do you find it easier to edit files or harder? What features about atom do you want to learn more about? Which features don't seem very useful?  
+  
+    * I feel that Atom is a much easier way to make big changes on files. If I were wanting to make small changes really quick, I may want to use Vi instead. Atom is just more robust and is better for larger file manipulations.  
+
+2. What are your thoughts on the version control Atom provides?  
+
+    * I find it a lot easier to see what I've changed, what branch I'm in, and what files have been modified. It really sticks out and I've found that color coding things really helps me in general.

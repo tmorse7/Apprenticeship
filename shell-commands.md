@@ -1,12 +1,12 @@
-Command Line Commands 
---------------------
+# Command Line Commands (Using VIM)
+
 * Linux Commands
     - pwd
         ~ print working directory
     - hostname
         ~ my computer's network name
     - mkdir
-        ~ make directory  
+        ~ make directory
     - cd
         ~ change directory
     - ls
@@ -27,7 +27,7 @@ Command Line Commands
 	~ print the whole file
     - xargs
 	~ execute arguements
-    - find  
+    - find
 	~ find files
     - grep
 	~ find things inside files
@@ -45,5 +45,3 @@ Command Line Commands
 	~ exit the shell
     - sudo
 	~ DANGER! become super user root DANGER!
-
-
