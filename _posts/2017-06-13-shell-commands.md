@@ -1,3 +1,8 @@
+---
+title: Command Line Commands (Written with VIM)
+layout: default
+---
+
 # Command Line Commands (Using VIM)
 
 * Linux Commands

@@ -1,0 +1,29 @@
+.title-bar {
+  height: 80px;
+  background-color: purple;
+  color: white;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+.title-bar a{
+  color: white;
+  text-decoration: none;
+  font-size: 36px;
+}
+
+.container {
+  padding: 1%;
+}
+
+.main-content {
+  width: 78%;
+  float: left;
+}
+
+.sidebar {
+  width: 19%;
+  border: 1px solid purple;
+  float: left;
+  padding: 15px;
+}

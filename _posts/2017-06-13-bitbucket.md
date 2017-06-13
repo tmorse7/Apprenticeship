@@ -1,3 +1,7 @@
+---
+title: Bitbucket vs. Github Interface Thoughts
+layout: default
+---
 # Bitbucket vs. Github Interface Thoughts
 
 Compared to Github, Bitbucket seems to be more bare bones with its features. I

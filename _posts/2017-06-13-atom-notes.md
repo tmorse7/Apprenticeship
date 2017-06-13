@@ -1,3 +1,8 @@
+---
+title: Atom Notes
+layout: default
+---
+
 # Atom Notes
 
 1. Getting Started

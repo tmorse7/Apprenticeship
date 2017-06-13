@@ -1,9 +1,7 @@
 name: "Tristan's Code Blog"
-description: "Coding notes dumping ground"
-
-url: "http://tristanswebsiteofcode.com"
-
+description: "Coding notes by Tristan Morse"
+url: "http://localhost:4000/"
+paginate: 10
 gems: [jekyll-paginate]
-
 markdown: rdiscount
 permalink: pretty
