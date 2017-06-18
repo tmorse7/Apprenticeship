@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tristan's Code Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coding notes by Tristan Morse">
+
+    <link href="/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="title-bar">
+      <a href="/">
+        Tristan's Code Blog
+      </a>
+      <div class="navbar">
+        <a href="/about">About</a>
+        <a href="/markdown">Markdown</a>
+        <a href="/jekyll">Jekyll</a>
+      </div>
+    </div>
+    <div class="container">
+
+<div class="main-content">
+  <h1>Learning Ruby Notes</h1>
+
+<ol>
+<li><p>Introduction</p>
+
+<ul>
+<li>Why do we need to learn this?
+
+<ul>
+<li>Learn how to simply manipulate computers</li>
+<li>Simple but foundational language</li>
+<li>Familiarizes with directory and file manipulation</li>
+</ul>
+</li>
+<li>Lots of memorization
+
+<ul>
+<li>Notecards are suggested</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Exercise 1: The Setup</p>
+
+<ul>
+<li> Linux/OSX Commands
+
+<ul>
+<li>pwd
+      ~ print working directory</li>
+<li>hostname
+      ~ my computer's network name</li>
+<li>mkdir
+      ~ make directory</li>
+<li>cd
+      ~ change directory</li>
+<li>ls
+      ~ list directory</li>
+<li>rmdir
+      ~ remove directory</li>
+<li>pushd
+      ~ push directory</li>
+<li>popd
+      ~ pop directory</li>
+<li>cp
+      ~ copy a file or directory</li>
+<li>mv
+      ~ move a file or directory</li>
+<li>less
+      ~ page through a file</li>
+<li>cat
+      ~ print the whole file</li>
+<li>xargs
+      ~ execute arguments</li>
+<li>find
+      ~ find files</li>
+<li>grep
+      ~ find things inside files</li>
+<li>man
+      ~ read a manual page</li>
+<li>apropos
+      ~ find what man page is appropriate</li>
+<li>env
+      ~ look at your environment</li>
+<li>echo
+      ~ print some arguments</li>
+<li>export
+      ~ export/set a new environment variable</li>
+<li>exit
+      ~ exit the shell</li>
+<li>sudo
+      ~ DANGER! become super user root DANGER!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Exercise 2: Paths, Folders, Directories (pwd)</p>
+
+<ul>
+<li>The ">" symbol is used to prompt the user ($ for Unix)</li>
+<li>pwd stands for "print working directory"</li>
+</ul>
+</li>
+<li><p>Exercise 3: If You Get Lost</p>
+
+<ul>
+<li>To go to default path, type 'cd ~'</li>
+<li>Print pwd and then cd ~</li>
+</ul>
+</li>
+<li><p>Exercise 4: Make A Directory</p>
+
+<ul>
+<li>Make new Directory by using 'mkdir' and 'mkdir -p' for bigger directories for Linux/OSX</li>
+<li>Directories are the same as folders</li>
+<li>/ can be used, but \ is the usual one to use</li>
+</ul>
+</li>
+<li><p>Exercise 5: Change Directory (cd)</p>
+
+<ul>
+<li>Use '..' to navigate up the tree/path</li>
+</ul>
+</li>
+<li><p>Exercise 6: List Directory (ls)</p>
+
+<ul>
+<li>dir -r and ls -lr print absolutely everytning</li>
+</ul>
+</li>
+<li><p>Exercise 7: Remove directory (rmdir)</p>
+
+<ul>
+<li>rmdir (dir) to remove</li>
+</ul>
+</li>
+<li><p>Exercise 8: Moving Around (pushd, popd)</p>
+
+<ul>
+<li>'pushd' takes current directory and pushes into a list for later, changes it to another directory
+
+<ul>
+<li>'save where I am, then go here'</li>
+</ul>
+</li>
+<li>'popd' takes last directory you pushed and 'pops' it off, taking you back there</li>
+<li>Doesn't work in powershell</li>
+</ul>
+</li>
+<li><p>Exercise 9: Making Empty Files (Touch, New-Item (windows))</p>
+
+<ul>
+<li>Example on Windows
+
+<ul>
+<li>New-Item example.txt -type file</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Exercise 10: Copy a File (cp)</p>
+
+<ul>
+<li>cp (doc to copy) (name of copy)</li>
+</ul>
+</li>
+<li><p>Exercise 11: Moving a File (mv)</p>
+
+<ul>
+<li>Moving (renaming files)</li>
+</ul>
+</li>
+<li><p>Exercise 12: View a File (less, MORE)</p>
+
+<ul>
+<li>less for linux and more for windows</li>
+</ul>
+</li>
+<li><p>Exercise 13: Stream a File (cat)</p>
+
+<ul>
+<li>Cat displays all of a file</li>
+</ul>
+</li>
+<li><p>Exercise 14: Removing a File (rm)</p>
+
+<ul>
+<li>Have to delete all files within a directory to remove it</li>
+</ul>
+</li>
+<li><p>Exercise 15: Exiting Your Terminal (exit)</p>
+
+<ul>
+<li>Exit is your friend</li>
+</ul>
+</li>
+</ol>
+
+
+<h1>General Notes</h1>
+
+<pre><code>* -r recurssively edits directories, manipulating all internal files within
+</code></pre>
+
+</div>
+<div class="sidebar">
+  <h3>About Me</h3>
+
+<P>
+  Howdy! I'm Tristan. I'm a computer science: information systems major and a new media minor at UNC Asheville. This is where I post all of the coding notes and blurbs I write for my internship at Herrmann International. Take a look around!
+</p>
+
+<p><u>Most Recent Posts</u></p>
+<ul>
+  
+    <li><a href="/2017/06/13/atom/">Thoughts on Atom</a></li>
+  
+    <li><a href="/2017/06/12/atom-notes/">Atom Notes</a></li>
+  
+    <li><a href="/2017/06/11/bitbucket/">Bitbucket vs. Github Interface Thoughts</a></li>
+  
+    <li><a href="/2017/06/10/git/">Git and Github Questions</a></li>
+  
+    <li><a href="/2017/06/09/git-and-github-notes/">Git and Github Notes</a></li>
+  
+</ul>
+
+<div>
+  <ul class="pagination">
+    
+    <li>Prev</li>
+    
+    
+    <li><a href="/">1</a></li>
+    
+    
+    
+    <li>Next</li>
+    
+  </ul>
+</div>
+
+</div>
+    </div>
+  </body>
+</html>
+

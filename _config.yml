@@ -1,1 +1,7 @@
-theme: jekyll-theme-time-machine
+name: "Tristan's Code Blog"
+description: "Coding notes by Tristan Morse"
+url: "http://localhost:4000/"
+paginate: 5
+gems: [jekyll-paginate]
+markdown: rdiscount
+permalink: pretty

@@ -1,3 +1,8 @@
+---
+title: Git and Github Notes
+layout: default
+---
+
 # Git and Github Notes
 
 * Repository

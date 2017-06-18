@@ -1,3 +1,8 @@
+---
+title: Learning Ruby Notes
+layout: default
+---
+
 # Learning Ruby Notes  
 
 
