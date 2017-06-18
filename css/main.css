@@ -10,6 +10,12 @@
   color: white;
   text-decoration: none;
   font-size: 36px;
+  display: inline-flex;
+  padding-right: 60px;
+}
+
+.navbar {
+  float: right;
 }
 
 .container {
@@ -26,4 +32,14 @@
   border: 1px solid purple;
   float: left;
   padding: 15px;
+}
+
+.pagination {
+  list-style-type: none;
+  display: inline-flex;
+  padding-left: 30%;
+}
+
+.pagination li{
+  padding: 0 5px;
 }
