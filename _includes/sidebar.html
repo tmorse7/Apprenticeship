@@ -7,7 +7,7 @@
 <p><u>Most Recent Posts</u></p>
 <ul>
   {% for post in site.posts limit: 5 %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 
@@ -15,9 +15,9 @@
   <ul class="pagination">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-      <li><a href="/">Prev</a></li>
+      <li><a href="{{ site.url }}">Prev</a></li>
       {% else %}
-      <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
+      <li><a href="{{ site.url }}/page{{ paginator.previous_page }}">Prev</a></li>
       {% endif %}
     {% else %}
     <li>Prev</li>
@@ -25,17 +25,17 @@
     {% if paginator.page == 1 %}
     <li>1</li>
     {% else %}
-    <li><a href="/">1</a></li>
+    <li><a href="{{ site.url }}">1</a></li>
     {% endif %}
     {% for count in (2..paginator.total_pages) %}
       {% if count == paginator.page %}
       <li>{{ count }}</li>
       {% else %}
-      <li><a href="/page{{ count }}">{{ count }}</a></li>
+      <li><a href="{{ site.url }}/page{{ count }}">{{ count }}</a></li>
       {% endif %}
     {% endfor %}
     {% if paginator.next_page %}
-    <li><a href="/page{{ paginator.next_page }}">Next</a></li>
+    <li><a href="{{ site.url }}/page{{ paginator.next_page }}">Next</a></li>
     {% else %}
     <li>Next</li>
     {% endif %}
