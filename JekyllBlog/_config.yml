@@ -1,0 +1,8 @@
+name: "Tristan's Code Blog"
+description: "Coding notes by Tristan Morse"
+url: "https://tmorse7.github.io/Apprenticeship/JekyllBlog/"
+base_path: "/Apprenticeship/JekyllBlog/"
+paginate: 5
+gems: [jekyll-paginate]
+markdown: rdiscount
+permalink: pretty
