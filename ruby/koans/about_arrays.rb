@@ -9,7 +9,7 @@ class AboutArrays < Neo::Koan
 
   def test_array_literals
     array = Array.new
-    assert_equal [], array
+    assert_equal [], array 
 
     array[0] = 1
     assert_equal [1], array
