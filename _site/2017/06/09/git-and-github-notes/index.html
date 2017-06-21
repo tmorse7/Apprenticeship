@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tristan's Code Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coding notes by Tristan Morse">
+
+    <link href="https://tmorse7.github.io/Apprenticeship//css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="title-bar">
+      <a href="/Apprenticeship/">
+        Tristan's Code Blog
+      </a>
+      <div class="navbar">
+        <a href="https://tmorse7.github.io/Apprenticeship//about">About</a>
+        <a href="https://tmorse7.github.io/Apprenticeship//markdown">Markdown</a>
+        <a href="https://tmorse7.github.io/Apprenticeship//jekyll">Jekyll</a>
+      </div>
+    </div>
+    <div class="container">
+
+<div class="main-content">
+  <h1>Git and Github Notes</h1>
+
+<ul>
+<li>Repository
+
+<ul>
+<li>Place to store files</li>
+</ul>
+</li>
+<li>Commit (command)
+
+<ul>
+<li>"Save" (update)</li>
+<li>Hash
+  ~ Crazy number after commit</li>
+</ul>
+</li>
+<li>Branch
+
+<ul>
+<li>Master
+  ~ Main branch</li>
+<li>Branches go off of master branch and off of each other</li>
+</ul>
+</li>
+<li>Pull Request
+
+<ul>
+<li>Take changes from one branch and bring it to another</li>
+<li>Ask to pull something into someone else's repository</li>
+</ul>
+</li>
+<li>Merge</li>
+<li>Fork
+
+<ul>
+<li>Duplicate a repository from another person to work on something without interfering with the main repository</li>
+</ul>
+</li>
+<li>clone (command)
+
+<ul>
+<li>Taking a repository and copying it to your computer</li>
+</ul>
+</li>
+<li>status (command)
+
+<ul>
+<li>Gives you repository info</li>
+</ul>
+</li>
+<li>commit arguements
+
+<ul>
+<li>(-a) commits all</li>
+<li>(-m) commits with message (after -a)</li>
+</ul>
+</li>
+<li>Sign in</li>
+<li>Git config --list (shows git config)</li>
+<li>log
+
+<ul>
+<li>local history of commits</li>
+<li>gets into VIM</li>
+</ul>
+</li>
+<li>Push (command)
+
+<ul>
+<li>Sending to github</li>
+</ul>
+</li>
+<li>Pull (command)
+
+<ul>
+<li>Recieving from Github</li>
+</ul>
+</li>
+<li>Remote (command)
+
+<ul>
+<li>Where it sends files</li>
+<li>(-v) shows url of where it's going</li>
+</ul>
+</li>
+<li>Push Syntax
+
+<ul>
+<li>push (remote) (branch)</li>
+<li>remote is usually origin when you clone</li>
+</ul>
+</li>
+<li>git init
+
+<ul>
+<li>Make a folder a git repository</li>
+</ul>
+</li>
+<li>Locally, in order to make changes:
+
+<ul>
+<li>Save</li>
+<li>Add (puts things in a staging area to actually get commited)</li>
+<li>Commit</li>
+</ul>
+</li>
+<li>If you start repository locally, get remote from github</li>
+<li>If you need to log back in, use these:
+
+<ul>
+<li>git config --global user.name "Your name"</li>
+<li>git config --global user.email you@example.com</li>
+</ul>
+</li>
+<li>Github Pages
+
+<ul>
+<li>make a new branch called "gh-pages"</li>
+<li>Change default repository in settings under branches</li>
+<li>Delete master branch</li>
+</ul>
+</li>
+<li>git checkout -b
+
+<ul>
+<li>Creates new branch</li>
+</ul>
+</li>
+<li>git diff
+
+<ul>
+<li>Exact changelog</li>
+</ul>
+</li>
+<li>git checkout "blah"
+
+<ul>
+<li>Switches branches</li>
+</ul>
+</li>
+<li>git branch -v
+
+<ul>
+<li>Lists all branches</li>
+</ul>
+</li>
+</ul>
+
+
+<h1>Process:</h1>
+
+<ul>
+<li>'git init' to initialize folder or 'git pull <link> <branch>'</li>
+<li>Make a branch if need be with 'git checkout -b "branch"'</li>
+<li>Set remote properly with 'git remote' and if you don't have it, use 'git remote add origin <link>'</li>
+<li>Edit something with VIM or Atom</li>
+<li>Add to stage with 'git add <file>'</li>
+<li>Check 'git status' if need be to see if stage is correct</li>
+<li>Commit file with 'git commit (-a is optional) -m "comment"'</li>
+<li>Push file out with 'git push -u origin <branch>'</li>
+</ul>
+
+
+<p>In order to access shared folder, you need to go to root and then access vagrant folder.</p>
+
+<p>In order to push something with ssh, use the 'gitssh' folder instead of origin</p>
+
+</div>
+<div class="sidebar">
+  <h3>About Me</h3>
+
+<P>
+  Howdy! I'm Tristan. I'm a computer science: information systems major and a new media minor at UNC Asheville. This is where I post all of the coding notes and blurbs I write for my internship at Herrmann International. Take a look around!
+</p>
+
+<p><u>Most Recent Posts</u></p>
+<ul>
+  
+    <li><a href="https://tmorse7.github.io/Apprenticeship///2017/06/21/ruby/">Thoughts on Ruby</a></li>
+  
+    <li><a href="https://tmorse7.github.io/Apprenticeship///2017/06/13/atom/">Thoughts on Atom</a></li>
+  
+    <li><a href="https://tmorse7.github.io/Apprenticeship///2017/06/12/atom-notes/">Atom Notes</a></li>
+  
+    <li><a href="https://tmorse7.github.io/Apprenticeship///2017/06/11/bitbucket/">Bitbucket vs. Github Interface Thoughts</a></li>
+  
+    <li><a href="https://tmorse7.github.io/Apprenticeship///2017/06/10/git/">Git and Github Questions</a></li>
+  
+</ul>
+
+<div>
+  <ul class="pagination">
+    
+    <li>Prev</li>
+    
+    
+    <li><a href="https://tmorse7.github.io/Apprenticeship/">1</a></li>
+    
+    
+    
+    <li>Next</li>
+    
+  </ul>
+</div>
+
+</div>
+    </div>
+  </body>
+</html>
+
