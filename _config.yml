@@ -6,3 +6,4 @@ paginate: 5
 gems: [jekyll-paginate]
 markdown: rdiscount
 permalink: pretty
+exclude: ["etc"]
