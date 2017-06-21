@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tristan's Code Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coding notes by Tristan Morse">
+
+    <link href="https://tmorse7.github.io/Apprenticeship//css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="title-bar">
+      <a href="/Apprenticeship/">
+        Tristan's Code Blog
+      </a>
+      <div class="navbar">
+        <a href="https://tmorse7.github.io/Apprenticeship//about">About</a>
+        <a href="https://tmorse7.github.io/Apprenticeship//markdown">Markdown</a>
+        <a href="https://tmorse7.github.io/Apprenticeship//jekyll">Jekyll</a>
+      </div>
+    </div>
+    <div class="container">
+
+<div class="main-content">
+  <h1>Vi Notes - Vi Survival Guide</h1>
+
+<ol>
+<li>Intro</li>
+<li>Vi is truncation of the word "Visual"</li>
+<li>Basic Crash Course</li>
+<li>Starts out in NORMAL mode
+
+<ul>
+<li>Each keystroke has a special function</li>
+</ul>
+</li>
+<li>Insert mode may be more preferable
+
+<ul>
+<li>press i in NORMAL mode to change to this mode</li>
+<li>Acts like a normal editor</li>
+<li>Switch back to NORMAL mode by pressing ESC</li>
+</ul>
+</li>
+<li><p>Commands</p>
+
+<pre><code> - :w &lt;ENTER&gt;
+     ~ write file
+ - :wq &lt;ENTER&gt;
+     ~ save file and quit
+ - :w FILENAME &lt;ENTER&gt;
+     ~ write file as FILENAME
+ - :e FILENAME &lt;ENTER&gt;
+     ~ edit file FILENAME
+ - :q &lt;ENTER&gt;
+     ~ quit
+ - :q! &lt;ENTER&gt;
+     ~ quit without saving
+</code></pre></li>
+<li><p>Other Modes</p>
+
+<ul>
+<li>Guide to NORMAL mode
+
+<ul>
+<li>Movement
+
+<ul>
+<li>Able to use keys other than arrows to navigate
+
+<ul>
+<li>h = left</li>
+<li>j = down</li>
+<li>k = up</li>
+<li>l = right)</li>
+</ul>
+</li>
+<li>Some More Movement Keys
+
+<ul>
+<li>Inside the line<br/>
+  "$" moves to the end of the line<br/>
+  "0" moves to the beginning of the line<br/>
+  "^" moves to the first non-whitespace character – i.e. the beginning of an indented line.</li>
+<li>Movement via words (where a word is a sequence of alphanumeric OR punctuation signs)
+
+<ul>
+<li>w ~   next word</li>
+<li>e ~ end of current word</li>
+<li>b ~ previous word</li>
+</ul>
+</li>
+<li>Movement via words (where a word is a sequence of non-blank characters)
+
+<ul>
+<li>W ~ next word</li>
+<li>E ~ end of current word</li>
+<li>B ~ previous word</li>
+</ul>
+</li>
+<li>Other Jumps
+
+<ul>
+<li>H ~ jump to top of screen</li>
+<li>L ~ jump to bottom of screen</li>
+<li>{ ~ jump to previous paragraph</li>
+<li>} ~ jump to next paragraph</li>
+<li>fx ~ jump to next occurence of character x (where x is any character, of course)</li>
+<li>tx ~ jump right before next occurence of character x (’till x) (again, x in anything)</li>
+<li>Fx ~ jump to previous occurence of character x (again, x in anything)</li>
+<li>Tx ~ jump right after previous occurence of character x (back ’till x) (again, x in anything)</li>
+<li>G ~ jump to EOF (End of file)</li>
+<li>LINE G ~ jump to line no. LINE</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Modifying, Deleting, Copying, Pasting
+
+<ul>
+<li>Editing with INSERT mode
+
+<ul>
+<li>Main Commands
+
+<ul>
+<li>i ~ places you in INSERT mode before the current character.</li>
+<li>I ~ places you in INSERT mode at the beginning of the line. Same as ^i</li>
+<li>a ~ places you in INSERT mode after the current character. Same as i+RIGHT-ARROW (or li when not at the eng of the line)</li>
+<li>A ~ places you in INSERT mode at the end of the line. Same as $a</li>
+<li>o ~ places you in INSERT mode in a new line below the current one. Same as $i</li>
+<li>O ~ places you in INSERT mode in a new line above the current one. Same as ko</li>
+</ul>
+</li>
+<li>Single Character Deleting/Editing
+
+<ul>
+<li>x ~ delete character under cursor. like (DEL) in INSERT mode.</li>
+<li>X ~ deletes the previous character. like Backspace in INSERT mode.</li>
+<li>rx ~ replace the character under the cursor with character x (where x is any character)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Editing with NORMAL mode
+
+<ul>
+<li>Main Commands
+
+<ul>
+<li>d{motion} ~   delete all text up to the destination of movement {motion}</li>
+<li>c{motion} ~ delete all text up to the destination of movement {motion} and enter INSERT mode (change the text)</li>
+<li>y{motion} ~ copy (yank in vi-speak) all text up to the destination of movement {motion}</li>
+<li>p ~ paste (or put) the last deleted, changed or yanked text after the current position</li>
+<li>P ~ paste (or put) the last deleted, changed or yanked text before the current position</li>
+</ul>
+</li>
+<li>Examples
+
+<ul>
+<li>dw ~ delete up to the beginning of the next word</li>
+<li>{c} ~ change current paragraph</li>
+<li>ywP ~ duplicate word</li>
+</ul>
+</li>
+<li>  Special Cases
+
+<ul>
+<li>dd ~ deleted current line</li>
+<li>cc ~ change current line</li>
+<li>yy ~ yank current line</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Repetition and How To Avoid It
+
+<ul>
+<li>'.' repeats the last command executed</li>
+<li>Counts are useful to repeat a command a certain amount of times
+
+<ul>
+<li>{number}{command}</li>
+</ul>
+</li>
+<li>Universal Commands
+
+<ul>
+<li>u undo last command (including INSERT mode sessions)</li>
+<li>(Ctrl+r)  redo last undone command</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Ex Mode
+
+<ul>
+<li>Command-line like mode</li>
+<li>gQ ~ Enter ex mode</li>
+<li>Section 2 commands are ex mode commands</li>
+<li>Commands (
+
+<ul>
+<li>w[rite] ~ [FILENAME]  write file to FILENAME (if given)</li>
+<li>w[rite]! ~ FILENAME   write file to FILENAME, overwriting if it exists.</li>
+<li>e[dit] ~ FILENAME edit FILENAME</li>
+<li>e[dit]! ~ FILENAME    edit FILENAME without saving</li>
+<li>q[uit] ~ quit</li>
+<li>q[uit]! ~ quit without saving</li>
+<li>! COMMAND ~ execute shell command COMMAND</li>
+<li>vi[sual] ~ exit ex mode</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Searching and Replacing</p>
+
+<ul>
+<li>Commands
+
+<ul>
+<li>Searching commands (NORMAL mode)
+
+<ul>
+<li>/REGEX ~ search for strings matching the regular expression /REGEX/.</li>
+<li>?REGEX ~ search for strings matching the regular expression /REGEX/ backwards.</li>
+<li>n ~ go to next occurence</li>
+<li>N ~ go to previous occurence</li>
+</ul>
+</li>
+<li>Replacing commands (EX mode)
+
+<ul>
+<li>s/foo/bar/ ~ replace the first occurence of foo on the current line with bar</li>
+<li>s/foo/bar/g ~ replace all occurences of foo on the current line with bar</li>
+<li>%s/foo/bar/[g] ~ perform s/foo/bar/[g] on every line in the file.</li>
+<li>X,Ys/foo/bar/ ~ perform s/foo/bar/[g] on every line between line # X and # Y.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Appendix</p>
+
+<ul>
+<li>syntax    syntax highlighting</li>
+<li>Appendix 1: VISUAL mode
+
+<ul>
+<li>Commands
+
+<ul>
+<li>v ~ Enter normal VISUAL mode</li>
+<li>V~ Enter VISUAL LINE mode</li>
+<li>(Ctrl+v) ~ Enter VISUAL BLOCK mode</li>
+</ul>
+</li>
+<li>normal VISUAL mode
+
+<ul>
+<li>Character specific selection</li>
+</ul>
+</li>
+<li>VISUAL LINE
+
+<ul>
+<li>Line specific selection</li>
+</ul>
+</li>
+<li>VISUAL BLOCK
+
+<ul>
+<li>Block specific selection</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Appendix 2: Multiple Windows
+
+<ul>
+<li>Use ex command 'help usr_08' to get to relevant section in online documentation</li>
+<li>Window-related ex commands
+
+<ul>
+<li>split ~ horizontally split the current window and display the current buffer (=file) in the new window</li>
+<li>vsplit ~ vertically split the current window and display the current buffer in the new window</li>
+<li>new ~ horizontally split the current window and create a new buffer in the new window.</li>
+<li>vnew ~ vertically split the current window and create a new buffer in the new window.</li>
+<li>only ~ destroy all other windows.</li>
+<li>only! ~ destroy all other windows, discarding unsaved changes</li>
+<li>q ~ destroy the current window.</li>
+<li>qa ~ destroy all windows (exiting vim)</li>
+<li>qa! ~ destroy all windows (exiting vim), discarding unsaved changes</li>
+</ul>
+</li>
+<li>Window-related NORMAL commands
+
+<ul>
+<li>(ctrl+w) or h ~ move one window left</li>
+<li>(ctrl+w) or j ~ move one window down</li>
+<li>(ctrl+w) or k ~ move one window up</li>
+<li>(ctrl+w) or l ~ move one window right</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Final Words</p>
+
+<ul>
+<li>STAY AWAY FROM INSERT MODE (as much as you can)</li>
+</ul>
+</li>
+</ol>
+
+
+<h1>Vi Notes - Learn VIM Progressively</h1>
+
+<ul>
+<li>Guide for reading
+
+<ul>
+<li>Ctrl-(x) is written as &lt;C-(x)></li>
+</ul>
+</li>
+<li><p>Steps to teach yourself VIM</p>
+
+<ol>
+<li>Survive</li>
+<li>Feel comfortable</li>
+<li>Feel Better, Stronger, Faster</li>
+<li>Use superpowers of Vim</li>
+</ol>
+</li>
+<li><p>Survive</p>
+
+<ul>
+<li>Commands
+
+<ul>
+<li>i → Insert mode. Type ESC to return to Normal mode.</li>
+<li>x → Delete the char under the cursor</li>
+<li>:wq → Save and Quit (:w save, :q quit)</li>
+<li>dd → Delete (and copy) the current line</li>
+<li>p → Paste</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Feel Comfortable</p>
+
+<ul>
+<li>Insert mode variations
+
+<ul>
+<li>a → insert after the cursor</li>
+<li>o → insert a new line after the current one</li>
+<li>O → insert a new line before the current one</li>
+<li>cw → replace from the cursor to the end of the word</li>
+</ul>
+</li>
+<li>Basic Moves
+
+<ul>
+<li>0 → go to the first column</li>
+<li>^ → go to the first non-blank character of the line</li>
+<li>$ → go to the end of line</li>
+<li>g_ → go to the last non-blank character of line</li>
+<li>/pattern → search for pattern</li>
+</ul>
+</li>
+<li>Copy/Paste
+
+<ul>
+<li>P → paste before, remember p is paste after current position.</li>
+<li>yy → copy the current line, easier but equivalent to ddP</li>
+</ul>
+</li>
+<li>Undo/Redo
+
+<ul>
+<li>u → undo</li>
+<li><C-r> → redo</li>
+</ul>
+</li>
+<li>Load/Save/Quit/Change File (Buffer)
+
+<ul>
+<li>:e <path/to/file> → open</li>
+<li>:w → save</li>
+<li>:saveas <path/to/file> → save to <path/to/file></li>
+<li>:x, ZZ or :wq → save and quit (:x only save if necessary)</li>
+<li>:q! → quit without saving, also: :qa! to quit even if there are modified hidden buffers.</li>
+<li>:bn (resp. :bp) → show next (resp. previous) file (buffer)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Better. Stronger. Faster.</p>
+
+<ul>
+<li>3.1 Better (repeating)
+
+<ul>
+<li>. → (dot) will repeat the last command</li>
+<li>N<command> → will repeat the command N times.</li>
+</ul>
+</li>
+<li>3.2 Stronger (moving)
+
+<ul>
+<li>NG → Go to line N</li>
+<li>gg → shortcut for 1G - go to the start of the file</li>
+<li>G → Go to last line</li>
+<li>Word moves
+
+<ul>
+<li>w → go to the start of the following word,</li>
+<li>e → go to the end of this word.</li>
+</ul>
+</li>
+<li>By default, words are letters and underscores. WORDS are separated with spaces (Use caps)
+
+<ul>
+<li>W → go to the start of the following WORD,</li>
+<li>E → go to the end of this WORD.</li>
+</ul>
+</li>
+<li>Efficient move commands
+
+<ul>
+<li>% : Go to the corresponding (, {, [.</li>
+<li><ul>
+<li>(resp. #) : go to next (resp. previous) occurrence of the word under the cursor</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>3.3 Faster (Command clarification)
+
+<ul>
+<li>Most commands use following format
+
+<ul>
+<li>(start position)(command)(end position)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Vim Superpowers</p>
+
+<ul>
+<li>4.1 Move on current line: 0 ^ $ g_ f F t T , ;
+
+<ul>
+<li>Commands
+
+<ul>
+<li>0 → go to column 0</li>
+<li>^ → go to first character on the line</li>
+<li>$ → go to the last column</li>
+<li>g_ → go to the last character on the line</li>
+<li>fa → go to next occurrence of the letter a on the line. , (resp. ;) will find the next (resp. previous) occurrence.</li>
+<li>t, → go to just before the character ,.</li>
+<li>3fa → find the 3rd occurrence of a on this line.</li>
+<li>F and T → like f and t but backward.</li>
+</ul>
+</li>
+<li>Useful tip: dt" → remove everything until the "</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<div class="sidebar">
+  <h3>About Me</h3>
+
+<P>
+  Howdy! I'm Tristan. I'm a computer science: information systems major and a new media minor at UNC Asheville. This is where I post all of the coding notes and blurbs I write for my internship at Herrmann International. Take a look around!
+</p>
+
+<p><u>Most Recent Posts</u></p>
+<ul>
+  
+    <li><a href="https://tmorse7.github.io/Apprenticeship///2017/06/13/atom/">Thoughts on Atom</a></li>
+  
+    <li><a href="https://tmorse7.github.io/Apprenticeship///2017/06/12/atom-notes/">Atom Notes</a></li>
+  
+    <li><a href="https://tmorse7.github.io/Apprenticeship///2017/06/11/bitbucket/">Bitbucket vs. Github Interface Thoughts</a></li>
+  
+    <li><a href="https://tmorse7.github.io/Apprenticeship///2017/06/10/git/">Git and Github Questions</a></li>
+  
+    <li><a href="https://tmorse7.github.io/Apprenticeship///2017/06/09/git-and-github-notes/">Git and Github Notes</a></li>
+  
+</ul>
+
+<div>
+  <ul class="pagination">
+    
+    <li>Prev</li>
+    
+    
+    <li><a href="https://tmorse7.github.io/Apprenticeship/">1</a></li>
+    
+    
+    
+    <li>Next</li>
+    
+  </ul>
+</div>
+
+</div>
+    </div>
+  </body>
+</html>
+
