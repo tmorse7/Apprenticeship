@@ -1,7 +1,3 @@
----
-Title: Final Interview Q&A
----
-
 ## Exit Interview/Survey
 1. On a scale of 1 to 10, with 1 being that you learned absolutely nothing and 10 being where you learned more than you could have imagined, rate this internship on how much you useful knowledge you acquired.
   * For this part, I would rate the it an 9. I learned quite a lot from this course that I am very grateful to have absorbed. The usefulness of all of this is incredibly great, since this is the sort of field I'm actually wanting to work in. I know that I will be using all that I have learned throughout my pursuit for this type of career and in the career itself.
